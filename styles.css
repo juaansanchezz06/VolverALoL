@@ -4,3 +4,9 @@ table{
 td, th{
     border:1px solid black
 }
+
+#menu{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(35, 92, 35);
+}
