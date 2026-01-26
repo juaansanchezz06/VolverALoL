@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    color: white;
+}
+
 table{
  border-collapse: collapse;
 }
@@ -6,7 +11,26 @@ td, th{
 }
 
 #menu{
+    color: white;
+    background-color: rgb(4, 0, 255);
     display: flex;
-    justify-content:space-around;
-    background-color: rgb(35, 92, 35);
+    justify-content:space-around ;
+    
+}
+#menu input{
+    display: flex;
+    justify-content: space-around;
+}
+#menu a{
+    display: flex;
+    justify-content: space-around;
+}
+nav#indice a{
+    text-decoration: none;
+    color:white;
+
+}
+#menu img{
+    width: 15%;
+    border-radius: 5rem
 }
