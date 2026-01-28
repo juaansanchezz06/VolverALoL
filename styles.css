@@ -1,42 +1,167 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: black;
-    color: white;
+  background-color: #0e1015;
+  color: #e6e6e6;
 }
 
-table {
-    border-collapse: collapse;
+h1, h2, h3 {
+  color: #f5c77a;
+  margin-bottom: 0.5rem;
 }
 
-td,
-th {
-    border: 1px solid black
+p {
+  margin-bottom: 1rem;
+}
+
+
+header {
+  background-color: #151822;
+  padding: 1.5rem;
 }
 
 #menu {
-    color: white;
-    background-color: rgb(4, 0, 255);
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
+#menu nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#menu nav img {
+  height: 50px;
+}
+
+#menu nav a {
+  color: #f5c77a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#menu nav a {
+  text-decoration: none;
+}
+
+#menu form {
+  display: flex;
+  flex-direction: center;
+  gap: 0.5rem;
+}
+
+#menu label {
+  font-size: 0.9rem;
 }
 
 #menu input {
-    display: flex;
-    justify-content: space-around;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
 }
 
-#menu a {
-    display: flex;
-    justify-content: space-around;
+@media (max-width: 768px) {
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-nav#indice a {
-    text-decoration: none;
-    color: white;
 
+#indice {
+  margin-top: 2rem;
 }
 
-#menu img {
-    width: 15%;
-    border-radius: 5rem
+#indice ul {
+  list-style: none;
+}
+
+#indice li {
+  margin-bottom: 0.5rem;
+}
+
+#indice a {
+  color: #9fd3ff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+
+.roles-lol {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .roles-lol {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .roles-lol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .roles-lol {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rol {
+  background-color: #1d2130;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #2f354a;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #1d2130;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #161a27;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
+
+footer {
+  background-color: #151822;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
 }
